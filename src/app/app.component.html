@@ -1,0 +1,11 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<ul class="app">
+<div style="text-align:center">
+  <ul>
+    <li *ngFor="let item of items | async">
+      <a>{{ item.name}}</a>
+      <button class="delete" title="delete" (click)="deleteTask(item)">x</button>
+    </li>
+  </ul>
+</div>
+</ul>
